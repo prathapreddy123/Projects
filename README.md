@@ -1,4 +1,4 @@
-This repository contains certain key modules contributing to the improvement of applications built for various companies.
+This repository contains certain key modules which contributed to the improvement of applications that were built for various companies.
 
 Each top level folder indicates the implementation language. 
 
