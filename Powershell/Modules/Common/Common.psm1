@@ -1,0 +1,7 @@
+﻿. "$PSScriptRoot\GenericFunctions.ps1"
+. "$PSScriptRoot\Cryptography.ps1"
+. "$PSScriptRoot\ReadINIFile.ps1"
+. "$PSScriptRoot\CSVToDataTable.ps1"
+. "$PSScriptRoot\FileWriter.ps1"
+. "$PSScriptRoot\Configurations.ps1"
+. "$PSScriptRoot\DebugFunctions.ps1"
