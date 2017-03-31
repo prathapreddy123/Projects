@@ -1,0 +1,43 @@
+2016-05-19 16:06:40,892 - INFO - Loading Configurations
+2016-05-19 16:06:41,533 - INFO - Creating GeoController instance
+2016-05-19 16:06:41,533 - INFO - Processing the stores
+2016-05-19 16:06:41,674 - DEBUG - Processing Store:25408
+2016-05-19 16:06:43,171 - DEBUG - Processing Store:26781
+2016-05-19 16:06:43,358 - DEBUG - Processing Store:27159
+2016-05-19 16:06:43,530 - DEBUG - Processing Store:28275
+2016-05-19 16:06:43,858 - DEBUG - Processing Store:33781
+2016-05-19 16:06:44,093 - DEBUG - Processing Store:94406
+2016-05-19 16:06:44,327 - DEBUG - Processing Store:94407
+2016-05-19 16:06:44,405 - DEBUG - Processing Store:94471
+2016-05-19 16:06:44,639 - DEBUG - Processing Store:94473
+2016-05-19 16:06:44,919 - DEBUG - Processing Store:94474
+2016-05-19 16:06:45,122 - ERROR - Exception:Type-GeocodingException;Message-StoreKey:25408-ErrorReason-ZERO_RESULTS;ErrorDetails-NA
+StoreKey:28275-ErrorReason-ZERO_RESULTS;ErrorDetails-NA
+StoreKey:94471-ErrorReason-ZERO_RESULTS;ErrorDetails-NA
+StoreKey:33781-ErrorReason-ZERO_RESULTS;ErrorDetails-NA
+StoreKey:94406-ErrorReason-ZERO_RESULTS;ErrorDetails-NA
+StoreKey:27159-ErrorReason-ZERO_RESULTS;ErrorDetails-NA
+StoreKey:94473-ErrorReason-ZERO_RESULTS;ErrorDetails-NA
+StoreKey:94474-ErrorReason-ZERO_RESULTS;ErrorDetails-NA
+StoreKey:94407-ErrorReason-ZERO_RESULTS;ErrorDetails-NA
+StoreKey:26781-ErrorReason-ZERO_RESULTS;ErrorDetails-NA
+2016-05-19 16:14:27,476 - INFO - Loading Configurations
+2016-05-19 16:14:28,131 - INFO - Creating GeoController instance
+2016-05-19 16:14:28,131 - INFO - Processing the stores
+2016-05-19 16:14:28,241 - DEBUG - Processing Store:26781
+2016-05-19 16:14:29,473 - DEBUG - Processing Store:94407
+2016-05-19 16:14:29,535 - ERROR - Exception:Type-GeocodingException;Message-StoreKey:26781-ErrorReason-ZERO_RESULTS;ErrorDetails-NA
+StoreKey:94407-ErrorReason-ZERO_RESULTS;ErrorDetails-NA
+2016-05-20 14:35:02,547 - INFO - Loading Configurations
+2016-05-20 14:35:03,264 - INFO - Creating GeoController instance
+2016-05-20 14:35:03,264 - INFO - Processing the stores
+2016-06-10 11:50:09,744 - INFO - Loading Configurations
+2016-06-10 11:50:10,711 - ERROR - (<class 'pyodbc.Error'>, Error('28000', "[28000] [Microsoft][ODBC SQL Server Driver][SQL Server]Login failed for user 'DigitalApp'. (18456) (SQLDriverConnect)"), <traceback object at 0x00000000033154C8>)
+2016-06-10 11:55:13,185 - INFO - Loading Configurations
+2016-06-10 11:55:14,121 - ERROR - (<class 'pyodbc.Error'>, Error('28000', "[28000] [Microsoft][ODBC SQL Server Driver][SQL Server]Login failed for user 'DigitalApp'. (18456) (SQLDriverConnect)"), <traceback object at 0x0000000003302448>)
+2016-06-10 12:00:31,881 - INFO - Loading Configurations
+2016-06-10 12:00:32,833 - ERROR - (<class 'pyodbc.ProgrammingError'>, ProgrammingError('42000', '[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Cannot open database "digital" requested by the login. The login failed. (4060) (SQLDriverConnect)'), <traceback object at 0x0000000003302E88>)
+2016-06-10 12:02:29,041 - INFO - Loading Configurations
+2016-06-10 12:02:29,883 - ERROR - (<class 'pyodbc.ProgrammingError'>, ProgrammingError('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]The SELECT permission was denied on the object 'Configurations', database 'DIGITAL', schema 'DSD'. (229) (SQLExecDirectW)"), <traceback object at 0x00000000032E2E88>)
+2016-06-10 12:03:39,794 - INFO - Loading Configurations
+2016-06-10 12:04:13,562 - INFO - Loading Configurations

@@ -1,0 +1,17 @@
+
+2016-05-19 16:06:45,122 - ERROR - Exception:Type-GeocodingException;Message-StoreKey:25408-ErrorReason-ZERO_RESULTS;ErrorDetails-NA
+StoreKey:28275-ErrorReason-ZERO_RESULTS;ErrorDetails-NA
+StoreKey:94471-ErrorReason-ZERO_RESULTS;ErrorDetails-NA
+StoreKey:33781-ErrorReason-ZERO_RESULTS;ErrorDetails-NA
+StoreKey:94406-ErrorReason-ZERO_RESULTS;ErrorDetails-NA
+StoreKey:27159-ErrorReason-ZERO_RESULTS;ErrorDetails-NA
+StoreKey:94473-ErrorReason-ZERO_RESULTS;ErrorDetails-NA
+StoreKey:94474-ErrorReason-ZERO_RESULTS;ErrorDetails-NA
+StoreKey:94407-ErrorReason-ZERO_RESULTS;ErrorDetails-NA
+StoreKey:26781-ErrorReason-ZERO_RESULTS;ErrorDetails-NA
+2016-05-19 16:14:29,535 - ERROR - Exception:Type-GeocodingException;Message-StoreKey:26781-ErrorReason-ZERO_RESULTS;ErrorDetails-NA
+StoreKey:94407-ErrorReason-ZERO_RESULTS;ErrorDetails-NA
+2016-06-10 11:50:10,711 - ERROR - (<class 'pyodbc.Error'>, Error('28000', "[28000] [Microsoft][ODBC SQL Server Driver][SQL Server]Login failed for user 'DigitalApp'. (18456) (SQLDriverConnect)"), <traceback object at 0x00000000033154C8>)
+2016-06-10 11:55:14,121 - ERROR - (<class 'pyodbc.Error'>, Error('28000', "[28000] [Microsoft][ODBC SQL Server Driver][SQL Server]Login failed for user 'DigitalApp'. (18456) (SQLDriverConnect)"), <traceback object at 0x0000000003302448>)
+2016-06-10 12:00:32,833 - ERROR - (<class 'pyodbc.ProgrammingError'>, ProgrammingError('42000', '[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Cannot open database "digital" requested by the login. The login failed. (4060) (SQLDriverConnect)'), <traceback object at 0x0000000003302E88>)
+2016-06-10 12:02:29,883 - ERROR - (<class 'pyodbc.ProgrammingError'>, ProgrammingError('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]The SELECT permission was denied on the object 'Configurations', database 'DIGITAL', schema 'DSD'. (229) (SQLExecDirectW)"), <traceback object at 0x00000000032E2E88>)

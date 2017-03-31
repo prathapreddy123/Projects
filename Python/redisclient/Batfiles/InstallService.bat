@@ -1,0 +1,1 @@
+D:\Scripts\python.exe D:\windowsservice.py install

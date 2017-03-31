@@ -1,0 +1,1 @@
+This project is used to geocode the stores using public available api's such as google maps, Quest map etc
