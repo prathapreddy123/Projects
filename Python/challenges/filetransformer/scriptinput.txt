@@ -1,0 +1,23 @@
+order_id:date	user_id	item_price_1	item_price_2	item_price_3	item_price_4	start_page_url
+54374:20150501	123	10	20	0	0	http://www.insacart.com/favorites
+54356:20150501	124	0	20.6	90	18.7	http://www.insacart.com/favorites
+54234:20150501:replacement	123	10.9	20.3	0	80	http://www.insacart.com/favorites
+54375:20150501	134	10	20	50.6	0	http://www.insacart.com/
+54376:20150501	126	10.7	26.8	0	0	http://www.insacart.com/
+12094:20150501	123	8.9	20		0	http://www.insacart.com
+54324::20150501	129	13.76	20.09	0	0	http://www.insacart.com/
+54374:20150501	125	10	20	15.70	99.99	http://www.insacart.com/
+54564:20150501	126	10	20	19.6	0	http://www.insacart.com/
+54884:20150503	127	10	20	0.99	0	http://www.insacart.com/favorites
+44374:20150501	128	44.6	20	0	0	http://www.insacart.com/favorites
+34374:20150501:	129	0	0	0	0	http://www.yahoo.com/
+54004:20150503	129	10	20.9	0	77.9		
+54974:20150503	120	10.7	20	0	0	google.com
+54374:20150501	345	8	0	0	0	http://www.insacart.com/cart
+52374:20150401	5678	0	20	21.670	0	http://www.%
+4374:20150501	123	10.88	10.88			http://www.insacart.com/favorites
+	423	10.8	20	0	10.99	http://www.insacart.com/favorites
+54374::20150501	424	1.09	20.66	0	0	http://www.insacart.com/search
+549374:20150501	325	10	20	30	30	http://www.insacart.com/favorites
+54334:20150501	428	10	20	0	50	http://www.insacart.com/search
+50374:20150501	429	10	990	0	0	http://www.insacart.com/

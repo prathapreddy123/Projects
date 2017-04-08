@@ -1,0 +1,23 @@
+order_id	order_date	user_id	Avg_Item_price	Start_page_url	Error_msg
+54374	20150501	123	15.0	http://www.insacart.com/favorites	
+54356	20150501	124	43.1	http://www.insacart.com/favorites	
+		123	37.067	http://www.insacart.com/favorites	Invalid orderid:orderdate value 54234:20150501:replacement. Expected format is order_id:date
+54375	20150501	134	26.867	http://www.insacart.com/	
+54376	20150501	126	18.75	http://www.insacart.com/	
+12094	20150501	123		http://www.insacart.com	Missing columns:item_price_3
+		129	16.925	http://www.insacart.com/	Invalid orderid:orderdate value 54324::20150501. Expected format is order_id:date
+54374	20150501	125	36.422	http://www.insacart.com/	
+54564	20150501	126	16.533	http://www.insacart.com/	
+54884	20150503	127	10.33	http://www.insacart.com/favorites	
+44374	20150501	128	32.3	http://www.insacart.com/favorites	
+		129	0		Invalid orderid:orderdate value 34374:20150501:. Expected format is order_id:date;Invalid url:http://www.yahoo.com/
+54004	20150503	129	36.267		Missing columns:start_page_url
+54974	20150503	120	15.35		Invalid url:google.com
+54374	20150501	345	8.0	http://www.insacart.com/cart	
+52374	20150401	5678	20.835		Invalid url:http://www.%
+4374	20150501	123		http://www.insacart.com/favorites	Missing columns:item_price_3,item_price_4
+		423	13.93	http://www.insacart.com/favorites	Missing columns:order_id:date
+		424	10.875	http://www.insacart.com/search	Invalid orderid:orderdate value 54374::20150501. Expected format is order_id:date
+549374	20150501	325	22.5	http://www.insacart.com/favorites	
+54334	20150501	428	26.667	http://www.insacart.com/search	
+50374	20150501	429	500.0	http://www.insacart.com/	
