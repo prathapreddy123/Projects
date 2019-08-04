@@ -1,1 +1,1 @@
-This folder contains Powershell code bits
+This folder contains Powershell modules
