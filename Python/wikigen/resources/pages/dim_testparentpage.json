@@ -1,0 +1,69 @@
+{
+
+	"type" :"page"
+
+	,"space.key" : "DWH"
+
+	, "title" : "dim_test_parent"
+
+	, "parent.title" : ""
+
+	, "placeholders" : {
+
+						"text"  : {
+									"Section1 - body" : "This table contains test parent information.  Hyperlinks can be created as %dali->https://hostname/wiki/cf/display/ENGS/Dali%"
+
+									},
+
+						"table" : 	[
+										{
+
+		                                 "name" :  "Section2 - body" ,
+		                                 "class" : "relative-table wrapped" ,
+		                                 "style" : "width: 30.9167%;" ,
+		                                 "colgroup" : [
+		                                                 { "style" : "width: 24.0541%;"},
+		                                                 { "style" : "width: 18.9189%;"},
+		                                                 { "style" : "width: 32.1622%;"},
+		                                                 { "style" : "width: 24.8649%;"}
+
+		                                              ],
+		                                 "colheaders" : ["Scheduler","Cluster","Data Source","Frequency"],
+		                                 "rows" : [
+		                                              ["Airflow","DevCluster","Oracle","Daily"]
+		                                             ,["Luigi","ProdCluster","hdfs","Static"]
+		                                          ]
+											}
+										]
+											,
+
+						"avrotable" : 	[
+											{
+
+			                                 "name" :  "Section3 - body" ,
+			                                 "class" : "relative-table wrapped" ,
+			                                 "style" : "width: 99%;" ,
+			                                 "colgroup" : [
+			                                                  { "style" : "width: 24.0541%;"},
+			                                                 { "style" : "width: 18.9189%;"},
+			                                                 { "style" : "width: 32.1622%;"},
+			                                                 { "style" : "width: 24.8649%;"}
+
+			                                              ],
+			                                  "filename"  : "dim_os_agent_demo.avsc",
+			                                  "start.key" : "fields",
+			                                  "nestedtable.layout" :"vertical",
+			                                  "customheaders" : {
+			                                  		"name" : "Column"
+			                                  		,"type" : "Data Type"
+			                                  		,"doc"  : "Description"
+			                                  		,"fields" : "Fields"
+			                                  		,"default"  : "Default"
+			                                    }
+			                                 }
+										]
+
+						}
+
+}
+

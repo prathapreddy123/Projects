@@ -1,0 +1,74 @@
+{
+
+	"type" :"page"
+
+	,"space.key" : "DWH"
+
+	, "title" : "dim_os_agent_demo"
+
+	, "parent.title" : ""
+
+	, "placeholders" : {
+						"text"  : {
+
+								   },
+
+						"jsonfield" : [
+								    	{
+			                               "filepath" : "~/gitprojects/ds-content/sa_direct_ads/code_base_sa_direct_ads/wikigen/resources/avro/dim_os_agent_demo.avsc" ,
+			                               "fieldmap" : {
+			                                 		      "Section1 - body" : "doc"
+			                                 			 }
+			                            }
+		                              ],
+
+						"table" : 	[
+										{
+
+		                                 "name" :  "Section2 - body" ,
+		                                 "class" : "relative-table wrapped" ,
+		                                 "style" : "width: 30.9167%;" ,
+		                                 "colgroup" : [
+		                                                 { "style" : "width: 24.0541%;"},
+		                                                 { "style" : "width: 18.9189%;"},
+		                                                 { "style" : "width: 32.1622%;"},
+		                                                 { "style" : "width: 24.8649%;"}
+
+		                                              ],
+		                                 "colheaders" : ["Scheduler","Cluster","Data Source","Frequency"],
+		                                 "rows" : [
+		                                            ["Airflow","DevCluster","Dali","Daily"]
+		                                          ]
+											}
+									],
+
+						 "avrotable" : 	[
+											{
+
+			                                 "name" :  "Section3 - body" ,
+			                                 "class" : "relative-table wrapped" ,
+			                                 "style" : "width: 99%;" ,
+			                                 "colgroup" : [
+			                                                  { "style" : "width: 24.0541%;"},
+			                                                 { "style" : "width: 18.9189%;"},
+			                                                 { "style" : "width: 32.1622%;"},
+			                                                 { "style" : "width: 24.8649%;"}
+
+			                                              ],
+			                                  "filepath"  : "~/gitprojects/ds-content/sa_direct_ads/code_base_sa_direct_ads/wikigen/resources/avro/dim_os_agent_demo.avsc",
+			                                  "start.key" : "fields",
+			                                  "nestedtable.layout" :"vertical",
+			                                  "customheaders" : {
+			                                  		"name" : "Column"
+			                                  		,"type" : "Data Type"
+			                                  		,"doc"  : "Description"
+			                                  		,"fields" : "Fields"
+			                                  		,"default"  : "Default"
+			                                    }
+			                                 }
+										]
+
+						}
+
+}
+

@@ -1,0 +1,69 @@
+{
+
+	"log" : {
+				    "version": 1,
+				   "disable_existing_loggers": false,
+				    "formatters": {
+				        "simple": {
+				            "format": "%(asctime)s - %(levelname)s - %(message)s"
+				        }
+				    },
+
+				    "handlers": {
+				        "log_file_handler": {
+				            "class": "logging.handlers.RotatingFileHandler",
+				            "level": "DEBUG",
+				            "formatter": "simple",
+				            "filename": "{filename}.log",
+				            "maxBytes": 10485760,
+				            "backupCount": 3,
+				            "encoding": "utf8"
+				        },
+
+				        "error_file_handler": {
+				            "class": "logging.handlers.RotatingFileHandler",
+				            "level": "ERROR",
+				            "formatter": "simple",
+				            "filename": "{filename}.log",
+				            "maxBytes": 10485760,
+				            "backupCount": 1,
+				            "encoding": "utf8"
+				        }
+				    },
+
+				    "loggers": {
+
+				        "app": {
+				            "level": "INFO",
+				            "handlers": ["log_file_handler","error_file_handler"],
+				            "propagate": "no"
+				        },
+
+				        "root": {
+				            "level": "ERROR",
+				            "handlers": ["error_file_handler"]
+				        }
+				    }
+
+                  },
+
+		"baseurl" : "https://hostname/wiki/cf/rest/api/content/",
+
+		"sslcertificate" : "/etc/riddler/ca-bundle.crt",
+
+		"templates.directory" : "~/resources/templates",
+
+		"pages.directory" : "~/resources/pages",
+
+		"avrofiles.directory" : "~/resources/avro",
+
+		"jsonfiles.directory" : "~/resources/avro",
+
+		"datapage.requiredfields" : ["type","title","space.key","placeholders"],
+
+		"datapage.requiredplaceholdertypes" : ["jsonfield","table","avrotable"],
+
+		"httprequest.headers" : {"Content-Type" : "application/json"},
+
+		"hyperlink.regexpattern" : "([%][\\w\\.\\-\\s]+->[\\S]+[%])"
+}

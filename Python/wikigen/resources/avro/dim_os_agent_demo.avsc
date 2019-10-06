@@ -1,0 +1,27 @@
+{
+  "type" : "record",
+  "name" : "dim_os_agent",
+  "namespace" : "com.prathap.fetl",
+  "doc" : "This is a type 1 table containing Operating System agent information. Hyperlinks can be created as %dali->https://hostname/wiki/cf/display/ENGS/Dali%",
+  "fields" : [ {
+    "name" : "os_agent_id",
+    "type" : "long",
+    "doc" : "Unique identifier for each operating system agent"
+  }, {
+    "name" : "os_name",
+    "type" : "string",
+    "doc" : "Name of the Operating System"
+  }, {
+    "name" : "os_major_version",
+    "type" : "string",
+    "doc" : "Operating System Major Version"
+  }, {
+    "name" : "os_full_version",
+    "type" : "string",
+    "doc" : "Operating System Full Version"
+  }, {
+    "name" : "description",
+    "type" : "string",
+    "doc" : "Description of the Operating System agent"
+  } ]
+}
