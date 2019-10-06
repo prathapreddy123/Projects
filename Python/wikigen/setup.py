@@ -24,8 +24,8 @@ setup(name='wikigen',
       python_requires='>=3.3',
       install_requires=[
       'keyring==11.0.0',
-      'urllib3==1.22',
-      'requests==2.18.4'
+      'urllib3==1.25',
+      'requests==2.20.0'
       ],
       classifiers=[
           "Development Status :: Alpha",
