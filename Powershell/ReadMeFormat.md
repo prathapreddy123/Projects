@@ -23,7 +23,7 @@ messages with fake data compliant to constraints.
 * PubSub Topic
 
 ### Creating the Schema File
-The schema file used to generate JSON messages with fake data is based on the 
+The schema file used to generate JSON messages with fake data  based on the 
 [json-data-generator](https://github.com/vincentrussell/json-data-generator) library. This library
 allows for the structuring of a sample JSON schema and injection of common faker functions to 
 instruct the data generator of what type of fake data to create in each field. See the 
