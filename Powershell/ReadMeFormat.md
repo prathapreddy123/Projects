@@ -46,3 +46,8 @@ Below is an example schema file which generates fake game event payloads with ra
   "completed": {{bool()}}
 }
 ```
+*Note*: Additional options such as max workers, service account can be specified in the parameters section as shown below:
+  
+ ```sh
+  --parameters autoscalingAlgorithm="THROUGHPUT_BASED",schemaLocation=$SCHEMA_LOCATION,topic=$PUBSUB_TOPIC,qps=$QPS,maxNumWorkers=5,serviceAccount=$serviceAccount
+```
