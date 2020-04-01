@@ -32,6 +32,7 @@ information on the faker functions.
 
 #### Example Schema File
 Below is an example schema file which generates fake game event payloads with random data.
+
 ```javascript
 {
   "eventId": "{{uuid()}}",
