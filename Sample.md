@@ -11,37 +11,55 @@ Note that the same test instance is used by all the integration tests (staging, 
 The integration test will need to create unique records to distinguish between its messages.
 
 ### Prerequisites ###
-* GKE Cluster must be set up and running. 
+* GKE Cluster must be set up and running. For details on how to set up cluster refer [GKE docs](https://cloud.google.com/kubernetes-engine/docs/how-to/creating-a-cluster)
 
-#### Deploy Splunk HEC standalone instance ####
+* Clone the current repository
 
-1. Create a GCE instance to host the Splunk HEC endpoint. This process has been terraformed for convenience.
+#### Deploy MongoDB instance ####
 
-```shell
-PROJECT=cloud-teleport-testing
-cd terraform
-$ terraform plan -var gcp_project_name=${PROJECT}
-$ terraform apply -var gcp_project_name=${PROJECT} -auto-approve
-```
-
-2. Push setup-splunk.sh to the GCE instance.
+1. Set up authentication to the GKE Cluster.
 
 ```shell
-PROJECT=cloud-teleport-testing
-gcloud compute scp setup-splunk.sh nokill-pubsub-to-splunk-integration-test:/tmp/ --zone=us-central1-b --project=${PROJECT}
+$ PROJECT=cloud-teleport-testing
+$ ZONE=KuberentesZone # In case of Zonal cluster
+$ cd pubsub-to-mongodb-test
+$ gcloud container clusters  get-credentials <KuberentesClusterName> --zone ${KuberentesZone}
 ```
 
-3. Execute splunk-setup.sh on the GCE instance
+2. Deploy the manifest file.
 
 ```shell
-PROJECT=cloud-teleport-testing
-gcloud compute ssh nokill-pubsub-to-splunk-integration-test --zone=us-central1-b --project=${PROJECT}
-cd /tmp
-sudo ./setup-splunk.sh
+$ kubectl apply -f teleport_mongodb_gkecluster.yaml
 ```
 
-4. Confirm Splunkd is running
+3. Get the Service end point IP address
 
 ```shell
-sudo systemctl status Splunkd
+$ kubectl get service/mongodb-ilb-service  --namespace default \
+    --output jsonpath='{.status.loadBalancer.ingress[0].ip}'
 ```
+
+4. Confirm mongodb is running
+
+```shell
+$ PODNAME=$(kubectl get pods --namespace default -o=custom-columns='DATA:metadata.name' | grep mongodb-deployment)
+$ kubectl exec -it ${PODNAME} -- /usr/bin/mongo
+$ show dbs;
+$ exit;
+```
+
+#### Deploy Cloud Function ####
+```shell
+$ PROJECT=cloud-teleport-testing
+$ REGION=us-central1
+$ CONNECTOR_NAME=vpc-conn-def-us-central1
+$ gcloud -q functions deploy teleport-mongodb-verifier \
+  --region=${REGION} --project=${PROJECT} \
+  --runtime=python37 \
+  --source="./cloudfunction" \
+  --entry-point="verify" \
+  --vpc-connector=${CONNECTOR_NAME} \
+  --trigger-http \
+  --allow-unauthenticated
+```
+
