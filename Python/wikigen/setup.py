@@ -24,7 +24,7 @@ setup(name='wikigen',
       python_requires='>=3.3',
       install_requires=[
       'keyring==11.0.0',
-      'urllib3==1.25',
+      'urllib3==1.26.5',
       'requests==2.20.0'
       ],
       classifiers=[
